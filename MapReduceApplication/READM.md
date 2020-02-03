@@ -73,23 +73,34 @@ Running on Eclipse : Right click on the Driver.java class then select Run button
     Unrecognized option: -mkdir
     Error: Could not create the Java Virtual Machine.
     Error: A fatal exception has occurred. Program will exit.
+    
     nagaraju@nagaraju:~/workspace/theprogrammersbook/repository/hadoop/MapReduceApp/target$ hdfs dfs -mkdir /user
+    
     nagaraju@nagaraju:~/workspace/theprogrammersbook/repository/hadoop/MapReduceApp/target$ hdfs dfs -mkdir /user/nagaraju
+    
     nagaraju@nagaraju:~/workspace/theprogrammersbook/repository/hadoop/MapReduceApp/target$ cd ..
+    
     nagaraju@nagaraju:~/workspace/theprogrammersbook/repository/hadoop/MapReduceApp$ ls
     input  MapReduceApp.iml  pom.xml  READM.md  src  target
+    
     nagaraju@nagaraju:~/workspace/theprogrammersbook/repository/hadoop/MapReduceApp$ hdfs dfs -put input/*.txt input
     put: `input': No such file or directory
+    
     nagaraju@nagaraju:~/workspace/theprogrammersbook/repository/hadoop/MapReduceApp$ hdfs dfs -mkdir input
+    
     nagaraju@nagaraju:~/workspace/theprogrammersbook/repository/hadoop/MapReduceApp$ hdfs dfs -put input/*.txt input
+    
     nagaraju@nagaraju:~/workspace/theprogrammersbook/repository/hadoop/MapReduceApp$ hdfs dfs -ls
     Found 1 items
     drwxr-xr-x   - nagaraju supergroup          0 2020-01-31 16:26 input
+    
     nagaraju@nagaraju:~/workspace/theprogrammersbook/repository/hadoop/MapReduceApp$ hdfs dfs -ls input
     Found 2 items
     -rw-r--r--   1 nagaraju supergroup         64 2020-01-31 16:26 input/sample1.txt
     -rw-r--r--   1 nagaraju supergroup         69 2020-01-31 16:26 input/sample2.txt
+    
     nagaraju@nagaraju:~/workspace/theprogrammersbook/repository/hadoop/MapReduceApp$ cd target/
+    
     nagaraju@nagaraju:~/workspace/theprogrammersbook/repository/hadoop/MapReduceApp/target$ hadoop jar MapReduceApp-1.0-SNAPSHOT.jar com.theprogrammersbook.mapreduce.Driver
     20/01/31 16:27:47 INFO mapreduce.Driver: Drive Code...
     20/01/31 16:27:49 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
