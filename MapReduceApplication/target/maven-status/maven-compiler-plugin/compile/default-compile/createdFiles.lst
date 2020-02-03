@@ -1,0 +1,4 @@
+com/theprogrammersbook/mapreduce/Driver.class
+com/theprogrammersbook/mapreduce/WordCount$CountMapper.class
+com/theprogrammersbook/mapreduce/WordCount.class
+com/theprogrammersbook/mapreduce/WordCount$CountReducer.class
