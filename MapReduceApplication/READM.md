@@ -68,6 +68,7 @@ Running on Eclipse : Right click on the Driver.java class then select Run button
     	at java.lang.reflect.Method.invoke(Method.java:498)
     	at org.apache.hadoop.util.RunJar.run(RunJar.java:244)
     	at org.apache.hadoop.util.RunJar.main(RunJar.java:158)
+    
     nagaraju@nagaraju:~/workspace/theprogrammersbook/repository/hadoop/MapReduceApp/target$ hdfs -mkdir /user
     Unrecognized option: -mkdir
     Error: Could not create the Java Virtual Machine.
