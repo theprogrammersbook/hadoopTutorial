@@ -22,14 +22,14 @@ So that i have used the following maven dependencies.
         </dependency>
 
 How to Run Application.
-1. I have created Driver.java class .
+**1. I have created Driver.java class .**
 Running on Eclipse : Right click on the Driver.java class then select Run button.
 
     a. Initially  Log4j is not added to the project , becuase of this Application will not show 
     the hadoop log to us.
     To get clarity on Log , we have to add log4j.property file to src folder.
 
-2. To run the application as jar file
+**2. To run the application as jar file**
     
     a. first we have to create jar file with the help of maven 
     as :  mvn clean install , then it will create jar file in target location.
