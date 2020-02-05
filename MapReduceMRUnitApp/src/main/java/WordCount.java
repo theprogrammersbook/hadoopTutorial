@@ -6,7 +6,7 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class WordCount {
-
+   // private static Logger logger = Logger.getLogger(WordCount.class);
     public static void main(String[] args) throws Exception {
         if (args.length != 2) {
             System.err.println(" Usage: WordCount < input path > < output path >");
